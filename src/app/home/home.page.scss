@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+*{
+  font-family: 'Oswald', sans-serif;
+}
+
+#contenedor {
+  background-color: #fafafa;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.title-container {
+  background-color: #f7a817;
+  color: #fff;
+  padding: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  font-size: 30px;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px; /* Ajusta el margen superior para centrar las imágenes */
+}
+
+
+
+/* Estilo para que el texto aparezca debajo de la imagen */
+.box {
+  text-align: center; /* Centra el contenido horizontalmente */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+
+.box-text {
+  color: black;
+  margin-top: 0%;
+}
+
+.subtitle {
+  font-size: 18px; /* Tamaño del subtítulo */
+  color: black;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7a817;
+  color: rgb(0, 0, 0);
+  padding: 9px;
+  bottom: -5%;
+} 
+
+footer ion-icon {
+  margin: 4%;
+  width: 50px;
+  height: 35px;
+  
+}
+
+
+/* Estilo para reducir el tamaño de los botones */
+ion-button {
+  width: 250px; /* Ajusta el ancho según sea necesario */
+  height: 250px;
+  margin-top: 20px;
+  --background: transparent;
+}
+
+@media (max-height:739px) {
+  ion-button {
+    width: 150px; 
+    height: 130px;
+  }
+  img{
+    width: 110px; 
+    height: 120px;
+  }
+}
+  
+@media (min-height:740px) {
+  ion-button {
+    width: 300px; 
+    height: 180px;
+  }
+  img{
+    width: 180px; 
+    height: 180px;
+  }
+}
+  
+
+img{
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+}
+
+

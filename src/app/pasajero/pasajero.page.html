@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <header>
+    <h1>Elige tu mejor viaje</h1>
+  </header>
+
+  <section>
+    <div class="contenedor">
+      <div id="map" #asMap class="map-contenedor">
+        <img src="/assets/mapa-melipilla.png" alt="">
+      </div>
+      <div class="box-viajes">
+        <div class="textos">
+          <div class="destino">
+            <h4>Destino Duoc Uc melipilla</h4>
+          </div>
+          <div class="input-wrapper">
+            <div class="ubicacion">
+              <input type="text">
+            </div>
+          </div>
+        </div>
+        <div class="viajes">
+          <div class="autos">
+            <div class="auto">
+              <img src="/assets/auto.png" alt="">
+              <p>Auto S</p>
+            </div>
+            <div class="auto">
+              <img src="/assets/auto.png" alt="">
+              <p>Auto M</p>
+            </div>
+            <div class="auto">
+              <img src="/assets/auto.png" alt="">
+              <p>Auto L</p>
+            </div>
+          </div>
+          <div class="wrapper-pago">
+            <div class="pago">
+              <div class="text-pago">
+                <h5>Formato de pago</h5>
+              </div>
+              <div class="wrapper-pago">
+                <select name="pago" id=""></select>
+              </div>
+              <ion-button class="btn" expand="block" routerLink="/home">Volver</ion-button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</ion-content>

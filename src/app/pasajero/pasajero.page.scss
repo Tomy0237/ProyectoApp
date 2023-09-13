@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+*{
+  font-family: 'Oswald', sans-serif;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  background-color: #f7a817;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+}
+
+.contenedor{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.map-contenedor{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: scale(4);
+  padding-top: 20px;
+  @media (max-height: 760) {
+    transform: scale(24);
+    padding-top: 20px;
+    
+  }   
+  }
+
+.box-viajes{
+  color: black;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: #fff;
+  width: auto;
+  border-radius: 5%;
+  border: 1px solid #000;
+  bottom: -8%;
+}
+
+.textos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+}
+
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.viajes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  gap: 20px;
+}
+.viajes img{
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  }
+
+.autos{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5%;
+  background-color: #eeeeee;
+  gap: 60px;
+}
+
+.pago{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.btn {
+  --background: #f7a817;
+  --box-shadow: 5px 5px 10px #cccbcb;
+}
+
+@media (max-width: 425px) {
+  
+}

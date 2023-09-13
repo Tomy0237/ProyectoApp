@@ -1,0 +1,37 @@
+<ion-content [fullscreen]="true">
+  <div id="contenedor">
+    <div class="title-container">
+      <div class="title">Te llevo APP</div>
+    </div>
+    
+    <div class="subtitle-container">
+      <div class="subtitle">¿Quién eres?</div>
+    </div>
+
+    <div class="container">
+      <ion-button (click)="animarTransaccion(0)" (click)="navigateToConductor()" class="Animacion">
+        <img src="../../assets/icon/conductor.png" alt="Imagen 1">
+      </ion-button>
+      <div class="box-text">Conductor</div>
+    
+      <ion-button (click)="animarTransaccion(1)" (click)="navigateToPasajero()" class="Animacion">
+        <img src="../../assets/icon/pasajero.jpg" alt="Imagen 2">
+      </ion-button>
+      <div class="box-text">Pasajero</div>
+    </div>
+    
+  </div>
+
+  <footer>
+    <ion-icon name="home-outline"></ion-icon>
+    <ion-icon routerLink="/historial" name="stats-chart-outline"></ion-icon>
+    <ion-icon name="mail-outline"></ion-icon>
+    <ion-icon name="wallet-outline"></ion-icon>
+  </footer>
+</ion-content>
+
+
+
+
+
+
