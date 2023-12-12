@@ -1,37 +1,30 @@
 <ion-content [fullscreen]="true">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <div id="contenedor">
+
     <div class="title-container">
-      <div class="title">Te llevo APP</div>
+      <h1 class="title">Te llevo APP</h1>
     </div>
     
-    <div class="subtitle-container">
-      <div class="subtitle">¿Quién eres?</div>
-    </div>
-
     <div class="container">
-      <ion-button (click)="animarTransaccion(0)" (click)="navigateToConductor()" class="Animacion">
+      <div class="subtitle-container">
+        <h2 class="animate__animated animate__swing">¿Quién eres?</h2>
+      </div>
+      <ion-button class="animate__animated animate__backInLeft" (click)="navigateToConductor()">
         <img src="../../assets/icon/conductor.png" alt="Imagen 1">
       </ion-button>
-      <div class="box-text">Conductor</div>
-    
-      <ion-button (click)="animarTransaccion(1)" (click)="navigateToPasajero()" class="Animacion">
-        <img src="../../assets/icon/pasajero.jpg" alt="Imagen 2">
+      <p class="box-text">Conductor</p>
+
+      <ion-button class="animate__animated animate__backInRight" (click)="navigateToPasajero()">
+        <img src="../../assets/icon/pasajero.png" alt="Imagen 2">
       </ion-button>
-      <div class="box-text">Pasajero</div>
+      <p class="box-text">Pasajero</p>
     </div>
-    
+    <footer>
+      <ion-icon (click)="navigateToHistorial()" name="stats-chart-outline"></ion-icon>
+      <ion-icon (click)="volverPaginaAnterior()" name="home-outline"></ion-icon>
+      <ion-icon name="wallet-outline" (click)="navigateToPaymentPage()"></ion-icon>
+    </footer>
   </div>
-
-  <footer>
-    <ion-icon name="home-outline"></ion-icon>
-    <ion-icon routerLink="/historial" name="stats-chart-outline"></ion-icon>
-    <ion-icon name="mail-outline"></ion-icon>
-    <ion-icon name="wallet-outline"></ion-icon>
-  </footer>
 </ion-content>
-
-
-
-
-
 

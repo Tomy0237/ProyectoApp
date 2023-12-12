@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { AnimationController, NavController } from '@ionic/angular';
 
 @Component({
@@ -8,15 +9,15 @@ import { AnimationController, NavController } from '@ionic/angular';
 })
 export class HomePage {
 
-  constructor(private navCtrl: NavController, private anim: AnimationController) { }
+  constructor(private navCtrl: NavController, private anim: AnimationController, private router: Router) { }
 
   animarTransaccion(index: number) {
+    
     const elemento = document.querySelectorAll(".Animacion")[index] as HTMLElement;
-
     if (elemento) {
       const animacion = this.anim.create()
         .addElement(elemento)
-        .duration(300)
+        .duration(600)
         .iterations(2)
         .keyframes([
           { offset: 0, transform: "translateX(-3px)" },
@@ -24,7 +25,7 @@ export class HomePage {
           { offset: 1, transform: "translateX(0px)" },
         ]);
 
-      animacion.play(); // Ejecuta la animación
+      animacion.play(); // Ejecuta la animación 
     }
   }
 
@@ -35,5 +36,18 @@ export class HomePage {
   navigateToConductor() {
     this.navCtrl.navigateForward('/conductor');
   }
+
+  volverPaginaAnterior() {
+    this.navCtrl.back();
+  }
+  navigateToPaymentPage() {
+    this.navCtrl.navigateForward('/billetera');
+  }
+
+  navigateToHistorial() {
+    this.navCtrl.navigateForward('/historial');
+  }
+
+  
 }
 

@@ -1,0 +1,39 @@
+<ion-content [fullscreen]="true">
+	<div class="title-container">
+	  <div class="title">Te llevo APP</div>
+	  <ion-icon id="volver" name="arrow-back-outline" (click)="volverPaginaAnterior()"></ion-icon>
+	</div>
+  <ion-img class="imagen-descriptiva"  src="../../assets/icon/VISA-PUNTOSG&T-SIGNATURE.png" alt="Descripción de la imagen"></ion-img>
+  <h2 class="titulo-datos-tarjeta">Ingresa los datos de tu tarjeta</h2>
+  <div class="formulario">
+    <form>
+      <ion-item>
+        <ion-label position="floating">Nombre de tarjeta</ion-label>
+        <ion-input type="text" [(ngModel)]="nombreTarjeta" name="nombre" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">numero de Tarjeta</ion-label>
+        <ion-input type="text" [(ngModel)]="numeroTarjeta" name="destino" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">fecha de Vencimiento</ion-label>
+        <ion-input type="number" [(ngModel)]="fechaVencimiento" name="telefono" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">cvv</ion-label>
+        <ion-input type="number" [(ngModel)]="cvv" name="cupos" min="1" max="4" required></ion-input>
+      </ion-item>
+
+    </form>
+    <div class="botones">
+      <ion-button class="btn" expand="block" (click)="iniciarNavegacion()">Iniciar</ion-button>
+
+    </div>
+  
+</div>
+    </ion-content>
+  
+    

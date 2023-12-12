@@ -2,21 +2,25 @@
 
 *{
   font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 #contenedor {
   background-color: #fafafa;
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .title-container {
   background-color: #f7a817;
   color: #fff;
-  padding: 25px;
+  height: 15vh;
+  display: grid;
+  align-content: center;
   width: 100%;
   text-align: center;
 }
@@ -30,14 +34,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px; /* Ajusta el margen superior para centrar las imágenes */
+  width: 100%;
+  justify-content: space-evenly;
+  height: 75vh;
 }
 
 
 
-/* Estilo para que el texto aparezca debajo de la imagen */
 .box {
-  text-align: center; /* Centra el contenido horizontalmente */
+  text-align: center; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,9 +55,10 @@
   margin-top: 0%;
 }
 
-.subtitle {
-  font-size: 18px; /* Tamaño del subtítulo */
+.animate__swing {
+  font-size: 25px; 
   color: black;
+  margin-top: 24px;
 }
 
 footer {
@@ -60,9 +66,9 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: #f7a817;
-  color: rgb(0, 0, 0);
-  padding: 9px;
-  bottom: -5%;
+  color: rgb(252, 251, 251);
+  height: 10vh;
+  width: 100%;
 } 
 
 footer ion-icon {
@@ -73,12 +79,15 @@ footer ion-icon {
 }
 
 
-/* Estilo para reducir el tamaño de los botones */
 ion-button {
-  width: 250px; /* Ajusta el ancho según sea necesario */
+  width: 250px;
   height: 250px;
   margin-top: 20px;
   --background: transparent;
+}
+
+ion-button:hover {
+  --background: #f7a817;
 }
 
 @media (max-height:739px) {
@@ -108,5 +117,15 @@ img{
   filter: brightness(1.1);
   mix-blend-mode: multiply;
 }
+img:hover{
+  mix-blend-mode: multiply;
+}
 
+.my-element {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: bounce; 
+  animation-duration: 2s;
+  
+}
 

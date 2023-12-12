@@ -1,7 +1,3 @@
-<ion-header [translucent]="true">
-
-</ion-header>
-
 <ion-content [fullscreen]="true">
 
   <header>
@@ -17,15 +13,15 @@
       <div class="form-login">
         <label for="Usuario">Usuario</label>
         <div class="input-wrapper">
-          <input class="int" type="text" label="Usuario" placeholder="">
+          <input class="int" type="text" label="Usuario" [(ngModel)]="usuario" placeholder="">
           <ion-icon class="icon" name="person-outline"></ion-icon>
         </div>
         <label for="Contraseña">Contraseña</label>
         <div class="input-wrapper">
-          <input class="int" type="password" label="Contraseña" labelPlacement="floating" placeholder="">
+          <input class="int" type="password" label="Contraseña" [(ngModel)]="contrasena" placeholder="">
           <ion-icon class="icon" name="lock-closed-outline"></ion-icon>
         </div>
-        <ion-button class="btn" expand="block" routerLink="/home">Iniciar Sesion</ion-button>
+        <ion-button class="btn" expand="block" (click)="iniciarSesion()">Iniciar Sesion</ion-button>
         <div class="olvidaste">
           <a href="">Olvidaste tu Contraseña?</a>
         </div>
@@ -35,3 +31,4 @@
 
 
 </ion-content>
+

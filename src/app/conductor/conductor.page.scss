@@ -2,53 +2,62 @@
 
 *{
   font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-y:hidden;
 }
-
-
-#contenedor {
-  background-color: #fafafa;
-  min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-  
 .title-container {
   background-color: #f7a817;
   color: #fff;
-  padding: 25px;
+  height: 15vh;
   width: 100%;
   text-align: center;
-}
-
-.title {
-  font-size: 30px;
-  margin: 0;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f7a817;
-  color: rgb(0, 0, 0);
-  padding: 9px;
-} 
-
-footer ion-icon {
-  margin: 4%;
-  width: 50px;
-  height: 35px;  
-}
-
-.formulario{
-  padding-top: 70px;
   display: flex;
   flex-direction: column;
+}
+.title {
+  font-size: 30px;
+  margin-top: 20px;
+}
+#volver{
+  width: 30px;
+  height: 30px;
+}
+
+#contenido {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 85vh;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  row-gap: .6rem;
+}
+
+#map {
+  height: 40vh;
+  width: 100%;
+}
+
+.input-wrapper{
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 1.2rem; 
+  color: #000;
 }
+
+input{
+  width: 120px;
+  background-color: transparent;
+  border: 1px solid #ffab10;
+}
+input:focus{
+  outline: none;
+}
+
 
 .botones{
   display: flex;
@@ -57,7 +66,7 @@ footer ion-icon {
 }
   
 ion-button {
-  width: 200px; 
+  width: 70%; 
   height: 30px; 
   color: #000; 
   font-size: 16px; 
@@ -66,15 +75,4 @@ ion-button {
   --background: #f7a817;
   --box-shadow: 5px 5px 10px #cccbcb;
   color: #fff;
-}
-
-@media (max-height:739px) {
-  .formulario{
-    padding-top: 10px;
-    }
-
-}
-  
-@media (min-height:740px) {
-
 }

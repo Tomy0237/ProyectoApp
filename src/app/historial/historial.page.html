@@ -1,10 +1,11 @@
-<ion-content [fullscreen]="true">
-  <div id="contenedor">
-    <div class="title-container">
-      <div class="title">Te llevo APP</div>
-      <div id="title">Historial</div>
 
-    </div>
+<ion-content [fullscreen]="true">
+  <div class="title-container">
+    <div class="title">Te llevo APP</div>
+    <ion-icon id="volver" name="arrow-back-outline" (click)="volverPaginaAnterior()"></ion-icon>
+  </div>
+      <div id="title">Historial</div>
+<div>
 
     <div class="historial-item">
       <div class="historial-info">
@@ -51,7 +52,7 @@
         <div class="historial-value">02/01/2023</div>
       </div>
     </div>
-    <ion-button class="btn" expand="block" routerLink="/home">Volver</ion-button>
+    
 
     <!-- <ion-button expand="full" (click)="volverPaginaAnterior()">Volver</ion-button> -->
   </div>
